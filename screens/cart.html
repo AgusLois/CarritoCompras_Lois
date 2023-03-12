@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Proyecto JS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../styles/styles.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,6 +21,12 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
 
     <script
@@ -30,18 +41,6 @@
   </head>
   <body>
     <header class="header header-absolute">
-      <div class="top-bar">
-        <div class="container-fluid">
-          <ul class="list-inline topbar-text mb-0">
-            <li class="list-inline-item pe-3 me-0">011 62656789</li>
-            <li
-              class="list-inline-item px-3 border-start d-none d-lg-inline-block"
-            >
-              Envio gratis a partir de $5000
-            </li>
-          </ul>
-        </div>
-      </div>
       <nav
         class="navbar navbar-expand-lg bg-light rounded"
         aria-label="Thirteenth navbar example"
@@ -66,37 +65,64 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./index.html"
+                  href="../screens/index.html"
                   >Home</a
                 >
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="./cart.html" aria-expanded="false"
-                  >Tu Carrito</a
-                >
+                <a class="nav-link" href="../screens/payment.html">Pagar</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
-              </li> -->
             </ul>
-            <!-- <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <a href="#">
-                <i class="fa-regular fa-user"></i>
-              </a>
-              <a href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
-            </div> -->
           </div>
         </div>
       </nav>
     </header>
 
-    <div class="container">
-        <div id="cartDiv" class="row"></div>
-    </div>
+    <h1>Tu carrito</h1>
+
+    <div class="row">
+      <div id="cartDiv" class="col-6 cartDiv"></div>
+      <div class="col-6">
+        <div class="card mb-5 orderContainer">
+          <div class="card-header">
+            <h6 class="mb-0">Tu orden</h6>
+          </div>
+          <div class="card-body py-4">
+            <p class="text-muted text-sm">
+              Shipping and additional costs are calculated based on values you
+              have entered.
+            </p>
+            <table class="table card-text">
+              <tr>
+                <th class="py-4">Subtotal</th>
+                <td class="py-4 text-end text-muted">$390.00</td>
+              </tr>
+              <tr>
+                <th class="py-4">Costos de envio</th>
+                <td class="py-4 text-end text-muted">$10.00</td>
+              </tr>
+              <tr>
+                <th class="pt-4 border-0">Total</th>
+                <td class="pt-4 text-end h3 fw-normal border-0">$400.00</td>
+              </tr>
+            </table>
+          </div>
+          <div class="card-footer overflow-hidden p-0">
+            <div class="d-grid">
+              <a class="btn btn-primary py-3" href="../screens/payment.html"
+                >Ir a pagar<i class="fa fa-chevron-right ms-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="./cart.js"></script>
+    <script src="../js/cart.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </body>
 </html>

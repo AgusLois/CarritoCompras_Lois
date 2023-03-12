@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Gorra",
+    "price": 200,
+    "img": "https://images.pexels.com/photos/9558598/pexels-photo-9558598.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  },
+  {
+    "name": "Zapatillas",
+    "price": 1000,
+    "img": "https://images.pexels.com/photos/8079829/pexels-photo-8079829.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  },
+  {
+    "name": "Bermuda Jean",
+    "price": 500,
+    "img": "https://images.pexels.com/photos/6995860/pexels-photo-6995860.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  },
+  {
+    "name": "Anillo",
+    "price": 50,
+    "img": "https://images.pexels.com/photos/8193716/pexels-photo-8193716.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  },
+  {
+    "name": "Buzo beige",
+    "price": 200,
+    "img": "https://images.pexels.com/photos/9558787/pexels-photo-9558787.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  },
+  {
+    "name": "Remera blanca",
+    "price": 100,
+    "img": "https://images.pexels.com/photos/9775653/pexels-photo-9775653.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  },
+  {
+    "name": "Blazer",
+    "price": 200,
+    "img": "https://images.pexels.com/photos/12311948/pexels-photo-12311948.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  },
+  {
+    "name": "Reloj",
+    "price": 80,
+    "img": "https://images.pexels.com/photos/14808296/pexels-photo-14808296.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  },
+  {
+    "name": "Jean",
+    "price": 250,
+    "img": "https://images.pexels.com/photos/6769359/pexels-photo-6769359.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "quantity": 0
+  }
+]

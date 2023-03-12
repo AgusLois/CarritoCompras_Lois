@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/payment.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2a5bdd7b69.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <header class="header header-absolute">
+        <nav
+          class="navbar navbar-expand-lg bg-light rounded"
+          aria-label="Thirteenth navbar example"
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample11"
+              aria-controls="navbarsExample11"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+              <a class="navbar-brand col-lg-3 me-0" href="#">Logo</a>
+              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../screens/index.html"
+                    >Home</a
+                  >
+                </li>
+   
+                <li class="nav-item">
+                  <a class="nav-link" href="../screens/payment.html">Pagar</a>
+                </li>
+              </ul>
+              <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                <div id="mySidebar" class="sidebar">
+                  <a href="javascript:void(0)" id="closeSideBar" class="closebtn"
+                    >&times;</a
+                  >
+                  <div id="cartDiv">
+                  </div>
+  
+                    <div class="modal-footer sidebar-cart-footer shadow">
+                      <div class="w-100">
+                        <h5 class="mb-4">Subtotal: <span class="float-right">$465.32</span></h5>
+                        <div class="d-grid gap-3"><a class="btn btn-outline-dark" href="../screens/cart.html">View cart</a></div>
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+                </div>
+  
+                <div id="main">
+                  <a href="#" id="openSideBar" class="openbtn">
+                    <i class="fa-solid fa-cart-shopping icons"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+        <div class="container2">
+      <div class="card-container">
+        <div class="front">
+          <div class="card-number-box">################</div>
+          <div class="flexbox">
+            <div class="box">
+              <span>card holder</span>
+              <div class="card-holder-name">full name</div>
+            </div>
+            <div class="box">
+              <span>expires</span>
+              <div class="expiration">
+                <span class="exp-month">mm</span>
+                <span class="exp-year">yy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="back">
+          <div class="stripe"></div>
+          <div class="box">
+            <span>cvv</span>
+            <div class="cvv-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <form action="">
+        <div class="inputBox">
+          <span>Numero tarjeta</span>
+          <input type="text" maxlength="16" class="card-number-input" />
+        </div>
+        <div class="inputBox">
+          <span>Nombre</span>
+          <input type="text" class="card-holder-input" />
+        </div>
+        <div class="flexbox">
+          <div class="inputBox">
+            <span>Venc MM</span>
+            <select name="" id="" class="month-input">
+              <option value="month" selected disabled>month</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div class="inputBox">
+            <span>Venc yy</span>
+            <select name="" id="" class="year-input">
+              <option value="year" selected disabled>year</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+            </select>
+          </div>
+          <div class="inputBox">
+            <span>cvv</span>
+            <input type="text" maxlength="4" class="cvv-input" />
+          </div>
+        </div>
+   <a class="submit-btn" href="./exit.html"> Comprar </a> 
+      </form>
+    </div>
+
+    <script src="../js/payment.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>
