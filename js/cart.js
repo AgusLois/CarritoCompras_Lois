@@ -38,16 +38,9 @@ function calculateSubtotal() {
   return subtotal;
 }
 
-function calculateTotal() {
-  let total = 0;
-
-  total = calculateSubtotal() + envio;
-
-  return total;
-}
-
 function renderProductsCart() {
   cartDiv.innerHTML = "";
+
   cartProducts.forEach((product) => {
     const div = document.createElement("div");
     div.className = "navbar-cart-product";
@@ -106,15 +99,10 @@ function renderProductsCart() {
     });
 
     let cartSubtotal = document.getElementById("subtotal");
-    let cartTotal = document.getElementById("total");
-    let cartEnvio = document.getElementById("envio");
 
     let subtotal = calculateSubtotal();
-    let total = calculateTotal();
 
     cartSubtotal.innerHTML = `$${subtotal}`;
-    cartTotal.innerHTML = `$${total}`;
-    cartEnvio.innerHTML = `$${envio}`;
   });
 }
 
