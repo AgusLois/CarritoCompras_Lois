@@ -9,6 +9,7 @@ class CartProduct {
 }
 
 let cartProducts = [];
+let envio = 10;
 
 function preChargeListCart() {
   cartProducts = [];
@@ -35,6 +36,14 @@ function calculateSubtotal() {
   });
 
   return subtotal;
+}
+
+function calculateTotal() {
+  let total = 0;
+
+  total = calculateSubtotal() + envio;
+
+  return total;
 }
 
 function renderProductsCart() {
@@ -97,9 +106,15 @@ function renderProductsCart() {
     });
 
     let cartSubtotal = document.getElementById("subtotal");
+    let cartTotal = document.getElementById("total");
+    let cartEnvio = document.getElementById("envio");
+
     let subtotal = calculateSubtotal();
+    let total = calculateTotal();
 
     cartSubtotal.innerHTML = `$${subtotal}`;
+    cartTotal.innerHTML = `$${total}`;
+    cartEnvio.innerHTML = `$${envio}`;
   });
 }
 

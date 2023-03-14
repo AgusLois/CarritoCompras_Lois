@@ -59,7 +59,6 @@
           </button>
 
           <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href="#">Logo</a>
             <ul class="navbar-nav col-lg-6 justify-content-lg-center">
               <li class="nav-item">
                 <a
@@ -68,10 +67,6 @@
                   href="../screens/index.html"
                   >Home</a
                 >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="../screens/payment.html">Pagar</a>
               </li>
             </ul>
           </div>
@@ -89,22 +84,18 @@
             <h6 class="mb-0">Tu orden</h6>
           </div>
           <div class="card-body py-4">
-            <p class="text-muted text-sm">
-              Shipping and additional costs are calculated based on values you
-              have entered.
-            </p>
             <table class="table card-text">
               <tr>
                 <th class="py-4">Subtotal</th>
-                <td class="py-4 text-end text-muted">$390.00</td>
+                <td class="py-4 text-end text-muted" id="subtotal"></td>
               </tr>
               <tr>
                 <th class="py-4">Costos de envio</th>
-                <td class="py-4 text-end text-muted">$10.00</td>
+                <td class="py-4 text-end text-muted" id="envio"></td>
               </tr>
               <tr>
                 <th class="pt-4 border-0">Total</th>
-                <td class="pt-4 text-end h3 fw-normal border-0">$400.00</td>
+                <td class="pt-4 text-end h3 fw-normal border-0" id="total"></td>
               </tr>
             </table>
           </div>
